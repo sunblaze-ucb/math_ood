@@ -1,0 +1,308 @@
+[
+  {
+    "letters": {
+      "h": 14,
+      "a": 10
+    },
+    "box_sizes": [
+      5,
+      5,
+      2,
+      5,
+      2,
+      5
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "c": 2,
+      "o": 1,
+      "z": 1,
+      "r": 1,
+      "d": 1
+    },
+    "box_sizes": [
+      2,
+      1,
+      3
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "p": 4,
+      "g": 6
+    },
+    "box_sizes": [
+      1,
+      4,
+      5
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "s": 1,
+      "x": 1,
+      "r": 1
+    },
+    "box_sizes": [
+      1,
+      1,
+      1
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "q": 13,
+      "f": 6
+    },
+    "box_sizes": [
+      5,
+      5,
+      5,
+      4
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "t": 5,
+      "z": 3,
+      "u": 4,
+      "q": 1
+    },
+    "box_sizes": [
+      3,
+      3,
+      5,
+      2
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "y": 4,
+      "e": 2,
+      "u": 1,
+      "i": 3,
+      "f": 4
+    },
+    "box_sizes": [
+      4,
+      3,
+      5,
+      2
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "y": 4,
+      "r": 1,
+      "n": 3
+    },
+    "box_sizes": [
+      4,
+      2,
+      2
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "i": 3,
+      "f": 3,
+      "z": 2,
+      "w": 4
+    },
+    "box_sizes": [
+      2,
+      4,
+      3,
+      2,
+      1
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "l": 2,
+      "u": 1,
+      "q": 2,
+      "m": 1
+    },
+    "box_sizes": [
+      3,
+      3
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "x": 3,
+      "z": 4
+    },
+    "box_sizes": [
+      4,
+      3
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "t": 1,
+      "k": 4,
+      "v": 5,
+      "d": 5
+    },
+    "box_sizes": [
+      2,
+      2,
+      4,
+      3,
+      4
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "q": 3,
+      "p": 3,
+      "z": 4,
+      "x": 1
+    },
+    "box_sizes": [
+      3,
+      5,
+      1,
+      1,
+      1
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "o": 1,
+      "n": 1,
+      "u": 1,
+      "s": 4,
+      "g": 1
+    },
+    "box_sizes": [
+      1,
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "f": 3,
+      "z": 2
+    },
+    "box_sizes": [
+      3,
+      2
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "k": 2,
+      "y": 5,
+      "o": 7,
+      "t": 7,
+      "x": 4
+    },
+    "box_sizes": [
+      4,
+      5,
+      3,
+      5,
+      4,
+      4
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "l": 2,
+      "j": 4
+    },
+    "box_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "m": 1,
+      "k": 1,
+      "v": 2
+    },
+    "box_sizes": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "labeled_boxes": true,
+    "problem_type": "labeled"
+  },
+  {
+    "letters": {
+      "t": 1,
+      "r": 1,
+      "a": 1,
+      "m": 1,
+      "s": 1
+    },
+    "box_sizes": [
+      1,
+      1,
+      3
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  },
+  {
+    "letters": {
+      "o": 2,
+      "f": 2
+    },
+    "box_sizes": [
+      1,
+      3
+    ],
+    "labeled_boxes": false,
+    "problem_type": "unlabeled"
+  }
+]
