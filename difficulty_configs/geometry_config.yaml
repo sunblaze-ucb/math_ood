@@ -7,67 +7,67 @@ levels:
   basic:
     level_1:
       min_length: 6
-      max_length: 9
+      max_length: 10
     level_2:
-      min_length: 10
-      max_length: 13
+      min_length: 11
+      max_length: 15
     level_3:
-      min_length: 14
-      max_length: 17
+      min_length: 16
+      max_length: 19
     level_4:
-      min_length: 18
-      max_length: 21
-    level_5:
-      min_length: 22
+      min_length: 20
       max_length: 25
+    level_5:
+      min_length: 26
+      max_length: 30
   polygon:
     level_1:
       min_length: 6
-      max_length: 9
+      max_length: 10
     level_2:
-      min_length: 10
-      max_length: 13
+      min_length: 11
+      max_length: 15
     level_3:
-      min_length: 14
-      max_length: 17
+      min_length: 16
+      max_length: 19
     level_4:
-      min_length: 18
-      max_length: 21
-    level_5:
-      min_length: 22
+      min_length: 20
       max_length: 25
+    level_5:
+      min_length: 26
+      max_length: 30
   circle:
     level_1:
       min_length: 6
-      max_length: 9
+      max_length: 10
     level_2:
-      min_length: 10
-      max_length: 13
+      min_length: 11
+      max_length: 15
     level_3:
-      min_length: 14
-      max_length: 17
+      min_length: 16
+      max_length: 19
     level_4:
-      min_length: 18
-      max_length: 21
-    level_5:
-      min_length: 22
+      min_length: 20
       max_length: 25
+    level_5:
+      min_length: 26
+      max_length: 30
   triangle:
     level_1:
       min_length: 6
-      max_length: 9
+      max_length: 10
     level_2:
-      min_length: 10
-      max_length: 13
+      min_length: 11
+      max_length: 15
     level_3:
-      min_length: 14
-      max_length: 17
+      min_length: 16
+      max_length: 19
     level_4:
-      min_length: 18
-      max_length: 21
-    level_5:
-      min_length: 22
+      min_length: 20
       max_length: 25
+    level_5:
+      min_length: 26
+      max_length: 30
 
 # Model-specific configurations mapping difficulty to levels
 models:

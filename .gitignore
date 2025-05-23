@@ -1,0 +1,9 @@
+*__pycache__*
+modules/geometry/passed
+modules/geometry/failed
+modules/geometry/natural_language_problems
+
+*.swp
+*.swo
+*.un~
+.vscode/
