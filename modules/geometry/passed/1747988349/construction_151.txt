@@ -1,0 +1,14 @@
+# Generated construction #151
+point_ :  -> M
+const int 9 -> D65
+const int 10 -> K8
+polygon_from_center_and_circumradius : K8 M D65 -> A B C D E F G H I J L
+line_pp : I F -> Q
+line_pp : C B -> X
+line_pl : H Q -> N
+orthogonal_line_pl : C X -> Z
+line_bisector_pp : A F -> T
+mirror_ll : T Z -> O
+intersect_ll : O N -> Y
+distance_pp : Y B -> V
+measure : V -> P

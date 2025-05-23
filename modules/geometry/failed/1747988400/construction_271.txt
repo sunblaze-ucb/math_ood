@@ -1,0 +1,12 @@
+# Generated construction #271
+point_ :  -> C
+const int 4 -> E92
+const int 8 -> A1
+polygon_from_center_and_circumradius : A1 C E92 -> A B D E F G H I T
+midpoint_pp : B E -> Q
+line_bisector_pp : A G -> W
+mirror_lp : W Q -> X
+point_l : X -> M
+midpoint_pp : C M -> P
+distance_pp : E P -> Z
+measure : Z -> S

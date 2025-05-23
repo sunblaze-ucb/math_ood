@@ -1,0 +1,12 @@
+# Generated construction #92
+point_ :  -> L
+const int 8 -> X26
+const int 8 -> X33
+polygon_from_center_and_circumradius : X33 L X26 -> A B C D E F G H K
+segment_pp : B E -> E44
+point_s : E44 -> Y
+mirror_ps : D E44 -> R
+const AngleSize 1.5707963267948966 -> V37
+rotate_pAp : R V37 Y -> O
+distance_pp : C O -> I
+measure : I -> S

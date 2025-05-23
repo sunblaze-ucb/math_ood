@@ -1,0 +1,16 @@
+# Generated construction #372
+point_ :  -> Z
+const int 5 -> C82
+const int 12 -> C86
+polygon_from_center_and_circumradius : C86 Z C82 -> A B C D E F G H I J K L R
+const AngleSize 2.0943951023931953 -> U86
+rotate_pAp : C U86 J -> T
+const AngleSize 0.7853981633974483 -> C9
+rotate_pAp : I C9 T -> W
+line_pp : Z W -> V
+const int 9 -> T15
+point_at_distance_along_line : V E T15 -> M
+segment_pp : M E -> M73
+midpoint_s : M73 -> P
+distance_pp : P I -> N
+measure : N -> O

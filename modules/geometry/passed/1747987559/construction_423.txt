@@ -1,0 +1,15 @@
+# Generated construction #423
+point_ :  -> Y
+const int 4 -> Q14
+const int 11 -> D40
+polygon_from_center_and_circumradius : D40 Y Q14 -> A B C D E F G H I J K V
+vector_pp : J C -> W
+const AngleSize 1.832595714594046 -> Y22
+rotate_pAp : G Y22 J -> U
+angular_bisector_ppp : A U G -> Q
+mirror_pl : H Q -> L
+translate_pv : B W -> Z
+angular_bisector_ppp : L B C -> R
+mirror_pl : Z R -> P
+segment_pp : P Y -> Q9
+measure : Q9 -> S

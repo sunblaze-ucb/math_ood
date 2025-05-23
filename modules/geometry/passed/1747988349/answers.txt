@@ -1,0 +1,10 @@
+construction_166.txt: 14.4998
+construction_161.txt: 18.8545
+construction_41.txt: 6.7987
+construction_122.txt: 12.6194
+construction_137.txt: 21.0
+construction_344.txt: 15.6525
+construction_299.txt: 8.0223
+construction_396.txt: 0.5236
+construction_151.txt: 22.4749
+construction_266.txt: 2.9743

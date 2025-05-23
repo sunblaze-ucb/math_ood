@@ -1,0 +1,11 @@
+# Generated construction #203
+point_ :  -> L
+const int 9 -> F63
+const int 12 -> H42
+polygon_from_center_and_circumradius : H42 L F63 -> A B C D E F G H I J K M V
+mirror_pp : I K -> X
+midpoint_pp : A X -> O
+segment_pp : O M -> Y39
+point_s : Y39 -> Z
+distance_pp : H Z -> P
+measure : P -> S

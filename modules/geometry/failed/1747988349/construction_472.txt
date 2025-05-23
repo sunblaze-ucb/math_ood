@@ -1,0 +1,12 @@
+# Generated construction #472
+point_ :  -> R
+const int 3 -> Z12
+const int 5 -> W80
+polygon_from_center_and_circumradius : W80 R Z12 -> A B C D E M
+segment_pp : D R -> J97
+midpoint_pp : B A -> U
+point_s : J97 -> F
+const AngleSize 1.0471975511965976 -> N7
+rotate_pAp : F N7 B -> K
+distance_pp : U K -> J
+measure : J -> X

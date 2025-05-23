@@ -1,0 +1,11 @@
+# Generated construction #396
+point_ :  -> E
+const int 5 -> T33
+const int 12 -> Z83
+polygon_from_center_and_circumradius : Z83 E T33 -> A B C D F G H I J K L M X
+segment_pp : M I -> L64
+circumcircle_p : X -> O
+point_s : L64 -> Q
+mirror_pc : Q O -> T
+angle_ppp : I T E -> Z31
+measure : Z31 -> U

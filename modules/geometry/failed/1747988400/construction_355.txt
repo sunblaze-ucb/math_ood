@@ -1,0 +1,11 @@
+# Generated construction #355
+point_ :  -> D
+const int 8 -> O4
+const int 6 -> Y89
+polygon_from_center_and_circumradius : Y89 D O4 -> A B C E F G K
+mirror_pp : B A -> P
+segment_pp : E P -> X68
+orthogonal_line_ps : D X68 -> Z
+point_l : Z -> N
+segment_pp : E N -> S90
+measure : S90 -> U

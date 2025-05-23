@@ -1,0 +1,13 @@
+# Generated construction #224
+point_ :  -> T
+const int 9 -> T67
+const int 10 -> S22
+polygon_from_center_and_circumradius : S22 T T67 -> A B C D E F G H I J O
+const int 4 -> D48
+point_pm : I D48 -> N
+line_pp : G C -> V
+line_bisector_pp : C N -> K
+mirror_ll : V K -> X
+mirror_pl : J X -> M
+segment_pp : B M -> T12
+measure : T12 -> P

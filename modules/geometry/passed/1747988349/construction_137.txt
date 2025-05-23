@@ -1,0 +1,11 @@
+# Generated construction #137
+point_ :  -> V
+const int 6 -> X6
+const int 6 -> P85
+polygon_from_center_and_circumradius : P85 V X6 -> A B C D E F H
+segment_pp : C D -> M18
+mirror_ps : F M18 -> Y
+midpoint_s : M18 -> P
+mirror_pp : Y V -> J
+distance_pp : J P -> I
+measure : I -> X

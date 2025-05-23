@@ -1,0 +1,12 @@
+# Generated construction #348
+point_ :  -> T
+const int 12 -> F81
+const int 8 -> J12
+polygon_from_center_and_circumradius : J12 T F81 -> A B C D E F G H U
+const int 12 -> U78
+point_pm : A U78 -> N
+vector_pp : N E -> K
+translate_pv : T K -> X
+mirror_pp : F X -> I
+distance_pp : I B -> L
+measure : L -> R

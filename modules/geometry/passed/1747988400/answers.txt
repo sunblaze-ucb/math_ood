@@ -1,0 +1,5 @@
+construction_19.txt: 22.769
+construction_5.txt: 3.1229
+construction_157.txt: 3.6056
+construction_490.txt: 6.678
+construction_135.txt: 6.0

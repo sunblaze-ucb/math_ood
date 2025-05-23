@@ -1,0 +1,11 @@
+# Generated construction #265
+point_ :  -> P
+const int 5 -> D32
+const int 12 -> Z20
+polygon_from_center_and_circumradius : Z20 P D32 -> A B C D E F G H I J K L Y
+segment_pp : L P -> A17
+line_bisector_s : A17 -> S
+orthogonal_line_pl : G S -> Z
+point_l : Z -> V
+segment_pp : V L -> L56
+measure : L56 -> R

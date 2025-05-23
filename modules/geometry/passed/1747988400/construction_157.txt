@@ -1,0 +1,14 @@
+# Generated construction #157
+point_ :  -> J
+const int 1 -> Z46
+const int 12 -> Y63
+polygon_from_center_and_circumradius : Y63 J Z46 -> A B C D E F G H I K L M Z
+midpoint_pp : M J -> T
+circumcircle_p : Z -> S
+mirror_pc : T S -> R
+const AngleSize 1.0471975511965976 -> C54
+rotate_pAp : H C54 R -> X
+line_bisector_pp : B L -> Q
+mirror_pl : R Q -> O
+distance_pp : O X -> N
+measure : N -> P

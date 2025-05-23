@@ -1,0 +1,14 @@
+# Generated construction #383
+point_ :  -> M
+const int 6 -> I1
+const int 4 -> G38
+polygon_from_center_and_circumradius : G38 M I1 -> A B C D L
+midpoint_pp : M A -> E
+line_pp : E B -> Y
+point_l : Y -> J
+const AngleSize 0.2617993877991494 -> G56
+rotate_pAp : E G56 J -> I
+const AngleSize 2.8797932657906435 -> N58
+rotate_pAp : I N58 C -> P
+distance_pp : I P -> X
+measure : X -> Z

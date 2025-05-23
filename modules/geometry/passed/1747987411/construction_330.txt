@@ -1,0 +1,11 @@
+# Generated construction #330
+point_ :  -> J
+const int 8 -> V17
+const int 6 -> W9
+polygon_from_center_and_circumradius : W9 J V17 -> A B C D E F X
+vector_pp : D A -> Q
+translate_pv : F Q -> O
+line_pp : F O -> W
+mirror_pl : J W -> P
+distance_pp : C P -> H
+measure : H -> G

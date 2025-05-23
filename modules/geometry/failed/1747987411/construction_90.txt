@@ -1,0 +1,14 @@
+# Generated construction #90
+point_ :  -> A
+const int 8 -> N1
+const int 6 -> I42
+polygon_from_center_and_circumradius : I42 A N1 -> B C D E F G L
+line_pp : A E -> H
+line_bisector_pp : G A -> T
+const int 11 -> A47
+point_at_distance_along_line : H C A47 -> X
+mirror_pl : X T -> Y
+const AngleSize 1.0471975511965976 -> Y72
+rotate_pAp : Y Y72 D -> J
+segment_pp : D J -> B89
+measure : B89 -> U

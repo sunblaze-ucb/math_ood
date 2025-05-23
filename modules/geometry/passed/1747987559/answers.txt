@@ -1,0 +1,4 @@
+construction_349.txt: 46.1923
+construction_123.txt: 15.019
+construction_15.txt: 13.8031
+construction_423.txt: 8.9337

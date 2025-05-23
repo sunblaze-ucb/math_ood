@@ -1,0 +1,16 @@
+# Generated construction #349
+point_ :  -> I
+const int 8 -> G64
+const int 6 -> V31
+polygon_from_center_and_circumradius : V31 I G64 -> A B C D E F X
+midpoint_pp : B C -> Z
+const AngleSize 1.308996938995747 -> H90
+rotate_pAp : Z H90 D -> N
+const AngleSize 0.5235987755982988 -> X18
+rotate_pAp : B X18 C -> W
+mirror_pp : W E -> V
+midpoint_pp : A C -> M
+const AngleSize 2.8797932657906435 -> T83
+rotate_pAp : M T83 N -> H
+segment_pp : V H -> F22
+measure : F22 -> Y

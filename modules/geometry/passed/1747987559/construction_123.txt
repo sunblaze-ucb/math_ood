@@ -1,0 +1,13 @@
+# Generated construction #123
+point_ :  -> O
+const int 11 -> J68
+const int 7 -> Q17
+polygon_from_center_and_circumradius : Q17 O J68 -> A B C D E F G U
+segment_pp : A B -> O53
+midpoint_pp : A D -> K
+midpoint_s : O53 -> Y
+const AngleSize 0.7853981633974483 -> V66
+rotate_pAp : K V66 F -> P
+midpoint_pp : C P -> X
+segment_pp : X Y -> Z28
+measure : Z28 -> T

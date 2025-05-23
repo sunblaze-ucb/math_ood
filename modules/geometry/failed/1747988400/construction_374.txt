@@ -1,0 +1,12 @@
+# Generated construction #374
+point_ :  -> W
+const int 2 -> B21
+const int 5 -> R78
+polygon_from_center_and_circumradius : R78 W B21 -> A B C D E N
+const int 2 -> Y17
+point_pm : A Y17 -> L
+segment_pp : L B -> I93
+orthogonal_line_ps : D I93 -> I
+point_l : I -> K
+distance_pp : K D -> F
+measure : F -> Q

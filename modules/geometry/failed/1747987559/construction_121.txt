@@ -1,0 +1,12 @@
+# Generated construction #121
+point_ :  -> I
+const int 4 -> N31
+const int 6 -> M95
+polygon_from_center_and_circumradius : M95 I N31 -> A B C D E F K
+midpoint_pp : F A -> H
+const int 12 -> X69
+point_pm : H X69 -> T
+segment_pp : E I -> X14
+mirror_ps : T X14 -> M
+distance_pp : C M -> S
+measure : S -> W

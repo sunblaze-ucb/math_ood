@@ -1,0 +1,13 @@
+# Generated construction #412
+point_ :  -> A
+const int 4 -> E18
+const int 5 -> T57
+polygon_from_center_and_circumradius : T57 A E18 -> B C D E F W
+line_pp : B C -> H
+const int 5 -> S93
+point_at_distance_along_line : H D S93 -> N
+segment_pp : F N -> U58
+line_bisector_s : U58 -> P
+point_l : P -> X
+segment_pp : C X -> S3
+measure : S3 -> S

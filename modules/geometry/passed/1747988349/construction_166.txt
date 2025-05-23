@@ -1,0 +1,13 @@
+# Generated construction #166
+point_ :  -> A
+const int 2 -> V49
+const int 6 -> W14
+polygon_from_center_and_circumradius : W14 A V49 -> B C D E F G N
+circumcircle_p : N -> Y
+const AngleSize 1.5707963267948966 -> D9
+rotate_pAp : D D9 B -> H
+mirror_pp : H D -> Z
+mirror_cp : Y Z -> I
+mirror_pc : Z I -> K
+distance_pp : K F -> U
+measure : U -> W

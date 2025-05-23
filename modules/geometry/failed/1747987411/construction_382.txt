@@ -1,0 +1,12 @@
+# Generated construction #382
+point_ :  -> V
+const int 5 -> Z95
+const int 6 -> R69
+polygon_from_center_and_circumradius : R69 V Z95 -> A B C D E F U
+angular_bisector_ppp : B D F -> J
+line_bisector_pp : D V -> X
+angular_bisector_ll : J X -> W H
+line_pl : F H -> Q
+point_l : Q -> Y
+distance_pp : Y E -> N
+measure : N -> P
