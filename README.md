@@ -1,232 +1,169 @@
-## List of available datasets 
+# MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning
 
-https://huggingface.co/datasets/sunyiyou/math_geometry_circle_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_perpendicular_intersection_7B_train
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_blocked_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_basic_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_rotation_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_triangle_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_rotation_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_rotation_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_knight_move_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_geometry_basic_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_zebralogic_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_triangle_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_circle_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_zebralogic_7B_train
-https://huggingface.co/datasets/sunyiyou/math_geometry_basic_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_geometry_triangle_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_geometry_perpendicular_intersection_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_7B_train
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_rookmove_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_geometry_circle_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_knight_move_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_rookmove_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_rookmove_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_blocked_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_7B_train
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_knight_move_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_7B_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_7B_train
-https://huggingface.co/datasets/sunyiyou/math_logic_gridworld_blocked_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_7B_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_7B_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_polygon_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_7B_train
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_7B_train
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_7B_test_out
-https://huggingface.co/datasets/sunyiyou/math_geometry_perpendicular_intersection_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_logic_zebralogic_7B_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_scaling_difficulty
-https://huggingface.co/datasets/sunyiyou/math_basic_problems
-https://huggingface.co/datasets/sunyiyou/math_combinatory_problems
-https://huggingface.co/datasets/sunyiyou/math_combinatory_problems_pattern
-https://huggingface.co/datasets/sunyiyou/math_func_intersection_probs
-https://huggingface.co/datasets/sunyiyou/math_function_problems
-https://huggingface.co/datasets/sunyiyou/math_matrix_problems
-https://huggingface.co/datasets/sunyiyou/math_comp_polynomial_gcd
-https://huggingface.co/datasets/sunyiyou/math_comp_parametric_intersection
-https://huggingface.co/datasets/sunyiyou/math_comp_matrix_rank
-https://huggingface.co/datasets/sunyiyou/math_comp_n_gon
-https://huggingface.co/datasets/sunyiyou/math_comp_circles_algebra
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_test_out
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_power_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_zeros_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_inverse_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_svd_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_area_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_list_prime_factors_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_pattern_matching_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_qr_sum_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_coords_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_determinant_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_mixed_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_eigenvalues_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_polynomial_roots_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_at-least-n-specific-fixed_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_test_in
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_ordered_lte_test_out
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_rank_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-fixed-points_train
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_gcd_test_in
-https://huggingface.co/datasets/sunyiyou/math_arithmetic_matrix_multiplication_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_distribution_test_in
-https://huggingface.co/datasets/sunyiyou/math_numbertheory_lte_qr_train
-https://huggingface.co/datasets/sunyiyou/math_algebra_linear_equation_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_test_out
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_train
-https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_exactly-n-specific-fixed_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_derivative_sign_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_test_out
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_intersection_test_in
-https://huggingface.co/datasets/sunyiyou/math_algebra_func_extrema_coords_test_in
-https://huggingface.co/datasets/sunyiyou/math_trans_func_intersection
-https://huggingface.co/datasets/sunyiyou/math_trans_de_moivre
-https://huggingface.co/datasets/sunyiyou/math_trans_matrix_rank
+[//]: # ([![arXiv]&#40;https://img.shields.io/badge/arXiv-preprint-b31b1b.svg&#41;]&#40;https://arxiv.org/abs/your-paper-link&#41;)
+
+[//]: # ([![HuggingFace]&#40;https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow&#41;]&#40;https://huggingface.co/datasets/sunyiyou&#41;)
+
+**Authors:** Yiyou Sun¹, Shawn Hu⁴, Georgia Zhou¹, Ken Zheng¹, Hannaneh Hajishirzi²'³, Nouha Dziri², Dawn Song¹
+
+¹University of California, Berkeley | ²Ai2 | ³University of Washington | ⁴dmodel.ai
+
+## Overview
+
+Recent large-scale language models (LLMs) with long Chain-of-Thought reasoning—such as DeepSeek-R1—have achieved impressive results on Olympiad-level mathematics benchmarks. However, they often rely on a narrow set of strategies and struggle with problems that require a novel way of thinking. To systematically probe these limitations, we introduce **MathOOD**, a controlled yet diverse benchmark designed to evaluate three axes of out-of-distribution generalization inspired by Boden's typology of creativity:
+
+1. **Exploratory** — applying known problem-solving skills to more complex instances within the same problem domain
+2. **Compositional** — combining distinct reasoning skills, previously learned in isolation, to solve novel problems that require integrating these skills in new and coherent ways  
+3. **Transformative** — adopting novel, often unconventional strategies by moving beyond familiar approaches to solve problems more effectively
+
+MathOOD consists of programmatically generated training–test pairs derived from templated problem generators across geometry, number theory, algebra, combinatorics, logic, and puzzles, with solutions verified using symbolic, numerical, or graphical methods.
+
+[//]: # (## 🚀 Quick Start)
+
+[//]: # ()
+[//]: # (### Installation)
+
+[//]: # ()
+[//]: # (Clone the repository and install dependencies:)
+
+[//]: # ()
+[//]: # (```bash)
+
+[//]: # (git clone https://github.com/your-username/math_ood.git)
+
+[//]: # (cd math_ood)
+
+[//]: # (pip install -r requirements.txt)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (**Required Dependencies:**)
+
+[//]: # (- `numpy`)
+
+[//]: # (- `sympy` )
+
+[//]: # (- `scipy`)
+
+[//]: # (- `matplotlib`)
+
+[//]: # (- `argparse`)
+
+[//]: # (- `collections`)
+
+### Generate Problems (Example)
+
+Generate problems by difficulty level:
+```bash
+python generate_basics_by_difficulty.py --difficulty 3 --num_samples 100
+```
+
+Generate specific problem types:
+```bash
+python generate_function_by_difficulty.py --type intersection --count 50
+python generate_matrix_by_difficulty.py --type determinant --size 4
+python generate_combinatory_by_difficulty.py --type probability --event no_fixed_points
+```
+
+## 📊 Benchmark Structure
+
+### Problem Categories
+
+MathOOD covers six major mathematical domains:
+
+- **🔢 Arithmetic** - Matrix operations, GCD, prime factorization
+- **📐 Geometry** - Circles, polygons, perpendicular intersections  
+- **🔤 Algebra** - Function analysis, polynomial roots, linear equations
+- **🎲 Combinatorics** - Probability, pattern matching, distributions
+- **🧩 Logic** - Grid-world problems, constraint satisfaction
+- **📊 Number Theory** - Quadratic residues, ordered sets
+
+### Generalization Types
+
+#### 1. Exploratory Generalization
+Tests scaling to more complex instances within the same domain:
+- **Training**: Simple 2x2 matrix determinants
+- **Testing**: Complex 5x5 matrix determinants
+
+#### 2. Compositional Generalization  
+Tests combining multiple mathematical skills:
+- **Training**: Geometry (circle properties) + Algebra (function intersection)
+- **Testing**: Problems requiring both skills simultaneously
+
+#### 3. Transformative Generalization
+Tests adoption of novel solution strategies:
+- **Training**: Standard polynomial root-finding methods
+- **Testing**: Complex analysis techniques (De Moivre's theorem)
+
+
+## 🎯 Usage Examples
+
+### Generate Matrix Problems
+
+```python
+from modules.matrix_computations import generate_matrix_determinant_problem
+
+# Generate a determinant problem
+problem = generate_matrix_determinant_problem(size=3, min_val=-5, max_val=5)
+print(f"Question: {problem.question}")
+print(f"Answer: {problem.answer}")
+```
+
+### Generate Function Analysis Problems
+
+```python  
+from modules.function_analysis import generate_intersection_problem
+
+# Generate function intersection problem
+problem = generate_intersection_problem(difficulty=4)
+print(f"Question: {problem.question}")
+print(f"Answer: {problem.answer}")
+```
+
+### Generate Combinatorial Problems
+
+```python
+from modules.combinatories import generate_probability_problem
+
+# Generate probability problem
+problem = generate_probability_problem(
+    event_type="no_fixed_points",
+    length=6,
+    letters=['a', 'b', 'c']
+)
+print(f"Question: {problem.question}")
+print(f"Answer: {problem.answer}")
+```
+
+## 🤗 HuggingFace Datasets
+
+All generated problems are available on HuggingFace.
+
+
+## 📚 Citation
+
+If you use MathOOD in your research, please cite:
+
+```bibtex
+@article{sun2025mathood,
+  title={MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning},
+  author={Sun, Yiyou and Hu, Shawn and Zhou, Georgia and Zheng, Ken and Hajishirzi, Hannaneh and Dziri, Nouha and Song, Dawn},
+  year={2025},
+}
+```
+
+
+[//]: # (  journal={arXiv preprint arXiv:xxxx.xxxxx})
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our contributing guidelines for:
+
+- Adding new problem generators
+- Extending generalization types
+- Improving evaluation metrics
+- Bug fixes and optimizations
+
+
+For questions or issues, please open a GitHub issue or contact the authors. 
