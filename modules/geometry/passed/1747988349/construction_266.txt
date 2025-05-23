@@ -1,0 +1,11 @@
+# Generated construction #266
+point_ :  -> W
+const int 1 -> F74
+const int 11 -> A35
+polygon_from_center_and_circumradius : A35 W F74 -> A B C D E F G H I J K T
+angular_bisector_ppp : C K A -> X
+segment_pp : C G -> V89
+midpoint_s : V89 -> R
+mirror_pl : G X -> Y
+segment_pp : Y R -> J10
+measure : J10 -> L

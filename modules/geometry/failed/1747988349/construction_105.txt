@@ -1,0 +1,14 @@
+# Generated construction #105
+point_ :  -> Q
+const int 1 -> N72
+const int 12 -> X28
+polygon_from_center_and_circumradius : X28 Q N72 -> A B C D E F G H I J K L O
+segment_pp : K Q -> S55
+line_bisector_s : S55 -> V
+midpoint_s : S55 -> W
+mirror_pp : E W -> N
+point_l : V -> Y
+mirror_pp : N Y -> R
+mirror_pp : Y R -> P
+segment_pp : K P -> K83
+measure : K83 -> T

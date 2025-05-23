@@ -1,0 +1,13 @@
+# Generated construction #48
+point_ :  -> M
+const int 10 -> C34
+const int 6 -> O7
+polygon_from_center_and_circumradius : O7 M C34 -> A B C D E F Q
+const int 9 -> E87
+point_pm : F E87 -> X
+line_bisector_pp : X D -> U
+segment_pp : M B -> W29
+mirror_lp : U M -> S
+intersect_sl : W29 S -> Z
+distance_pp : C Z -> J
+measure : J -> I

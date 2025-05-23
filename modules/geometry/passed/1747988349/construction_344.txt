@@ -1,0 +1,11 @@
+# Generated construction #344
+point_ :  -> T
+const int 7 -> M67
+const int 4 -> C58
+polygon_from_center_and_circumradius : C58 T M67 -> A B C D W
+line_bisector_pp : T C -> E
+line_pp : B C -> I
+line_pl : A E -> M
+intersect_ll : I M -> V
+distance_pp : T V -> G
+measure : G -> N

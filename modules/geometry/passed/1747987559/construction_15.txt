@@ -1,0 +1,15 @@
+# Generated construction #15
+point_ :  -> Q
+const int 5 -> W80
+const int 6 -> G36
+polygon_from_center_and_circumradius : G36 Q W80 -> A B C D E F J
+line_pp : A E -> H
+mirror_lp : H Q -> U
+const AngleSize 1.832595714594046 -> P6
+rotate_pAp : Q P6 B -> I
+mirror_pl : I H -> V
+mirror_lp : U V -> M
+orthogonal_line_pl : D M -> G
+mirror_pl : V G -> Y
+segment_pp : Y D -> M52
+measure : M52 -> T

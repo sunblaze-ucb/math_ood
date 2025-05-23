@@ -1,0 +1,11 @@
+# Generated construction #246
+point_ :  -> V
+const int 1 -> R84
+const int 5 -> C80
+polygon_from_center_and_circumradius : C80 V R84 -> A B C D E F
+mirror_pp : V B -> L
+mirror_pp : B A -> M
+segment_pp : A M -> P91
+mirror_ps : L P91 -> Y
+angle_ppp : Y C V -> H1
+measure : H1 -> X

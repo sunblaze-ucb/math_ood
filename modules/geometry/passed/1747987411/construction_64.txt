@@ -1,0 +1,12 @@
+# Generated construction #64
+point_ :  -> Y
+const int 2 -> K32
+const int 12 -> O19
+polygon_from_center_and_circumradius : O19 Y K32 -> A B C D E F G H I J K L W
+line_pp : G H -> V
+mirror_pp : B I -> U
+mirror_pp : J U -> P
+segment_pp : P K -> U3
+intersect_sl : U3 V -> R
+distance_pp : R D -> M
+measure : M -> S

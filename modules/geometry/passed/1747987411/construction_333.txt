@@ -1,0 +1,12 @@
+# Generated construction #333
+point_ :  -> J
+const int 8 -> K38
+const int 5 -> R81
+polygon_from_center_and_circumradius : R81 J K38 -> A B C D E S
+mirror_pp : D J -> K
+mirror_pp : K C -> W
+midpoint_pp : W E -> F
+const AngleSize 0.2617993877991494 -> Y58
+rotate_pAp : K Y58 F -> T
+distance_pp : T E -> H
+measure : H -> P

@@ -1,0 +1,13 @@
+# Generated construction #311
+point_ :  -> B
+const int 4 -> Q52
+const int 6 -> M22
+polygon_from_center_and_circumradius : M22 B Q52 -> A C D E F G S
+const int 10 -> N52
+point_pm : D N52 -> N
+segment_pp : E N -> P80
+point_s : P80 -> M
+angular_bisector_ppp : F M G -> I
+point_l : I -> T
+segment_pp : E T -> W77
+measure : W77 -> X

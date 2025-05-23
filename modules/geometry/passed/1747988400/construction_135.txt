@@ -1,0 +1,11 @@
+# Generated construction #135
+point_ :  -> V
+const int 12 -> C30
+const int 6 -> H31
+polygon_from_center_and_circumradius : H31 V C30 -> A B C D E F W
+angular_bisector_ppp : V F A -> X
+circumcircle_p : W -> O
+mirror_cl : O X -> J
+mirror_pc : D J -> G
+segment_pp : G V -> T14
+measure : T14 -> M

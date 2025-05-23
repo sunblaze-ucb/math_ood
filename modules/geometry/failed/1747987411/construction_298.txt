@@ -1,0 +1,12 @@
+# Generated construction #298
+point_ :  -> B
+const int 11 -> Z62
+const int 12 -> R86
+polygon_from_center_and_circumradius : R86 B Z62 -> A C D E F G H I J K L M X
+line_bisector_pp : B L -> V
+point_l : V -> O
+midpoint_pp : O C -> Y
+const AngleSize 1.5707963267948966 -> V24
+rotate_pAp : L V24 C -> U
+segment_pp : U Y -> W15
+measure : W15 -> T

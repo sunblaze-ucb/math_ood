@@ -1,0 +1,12 @@
+# Generated construction #163
+point_ :  -> C
+const int 2 -> T90
+const int 8 -> P86
+polygon_from_center_and_circumradius : P86 C T90 -> A B D E F G H I P
+circumcircle_p : P -> X
+line_pp : A I -> V
+const int 9 -> T79
+point_at_distance_along_line : V D T79 -> W
+mirror_pc : W X -> L
+distance_pp : G L -> O
+measure : O -> M

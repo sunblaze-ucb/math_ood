@@ -1,0 +1,12 @@
+# Generated construction #33
+point_ :  -> P
+const int 7 -> W24
+const int 8 -> R43
+polygon_from_center_and_circumradius : R43 P W24 -> A B C D E F G H V
+segment_pp : P G -> K69
+line_bisector_pp : A G -> M
+orthogonal_line_ps : F K69 -> J
+mirror_ll : J M -> Y
+point_l : Y -> U
+segment_pp : F U -> X15
+measure : X15 -> S

@@ -1,0 +1,11 @@
+# Generated construction #41
+point_ :  -> Z
+const int 4 -> E73
+const int 4 -> D34
+polygon_from_center_and_circumradius : D34 Z E73 -> A B C D K
+midpoint_pp : A Z -> Q
+line_pp : Q D -> P
+line_pp : A B -> W
+intersect_ll : P W -> G
+distance_pp : C G -> U
+measure : U -> Y

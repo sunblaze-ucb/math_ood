@@ -1,0 +1,13 @@
+# Generated construction #208
+point_ :  -> W
+const int 8 -> T13
+const int 6 -> N29
+polygon_from_center_and_circumradius : N29 W T13 -> A B C D E F U
+segment_pp : C B -> Q35
+angular_bisector_ppp : E W F -> M
+midpoint_s : Q35 -> I
+line_bisector_pp : D I -> S
+angular_bisector_ll : M S -> V T
+point_l : V -> L
+distance_pp : L B -> K
+measure : K -> P
