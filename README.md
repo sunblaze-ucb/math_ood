@@ -1,14 +1,13 @@
 # MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning
 
-[//]: # ([![arXiv]&#40;https://img.shields.io/badge/arXiv-preprint-b31b1b.svg&#41;]&#40;https://arxiv.org/abs/your-paper-link&#41;)
-
-[//]: # ([![HuggingFace]&#40;https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow&#41;]&#40;https://huggingface.co/datasets/sunyiyou&#41;)
+[![arXiv](https://img.shields.io/badge/arXiv-preprint-b31b1b.svg)](https://arxiv.org/abs/your-paper-link)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou)
 
 **Authors:** Yiyou Sun¹, Shawn Hu⁴, Georgia Zhou¹, Ken Zheng¹, Hannaneh Hajishirzi²'³, Nouha Dziri², Dawn Song¹
 
 ¹University of California, Berkeley | ²Ai2 | ³University of Washington | ⁴dmodel.ai
 
-## Overview
+## Abstract
 
 Recent large-scale language models (LLMs) with long Chain-of-Thought reasoning—such as DeepSeek-R1—have achieved impressive results on Olympiad-level mathematics benchmarks. However, they often rely on a narrow set of strategies and struggle with problems that require a novel way of thinking. To systematically probe these limitations, we introduce **MathOOD**, a controlled yet diverse benchmark designed to evaluate three axes of out-of-distribution generalization inspired by Boden's typology of creativity:
 
@@ -18,41 +17,9 @@ Recent large-scale language models (LLMs) with long Chain-of-Thought reasoning�
 
 MathOOD consists of programmatically generated training–test pairs derived from templated problem generators across geometry, number theory, algebra, combinatorics, logic, and puzzles, with solutions verified using symbolic, numerical, or graphical methods.
 
-[//]: # (## 🚀 Quick Start)
+## 🚀 Quick Start
 
-[//]: # ()
-[//]: # (### Installation)
-
-[//]: # ()
-[//]: # (Clone the repository and install dependencies:)
-
-[//]: # ()
-[//]: # (```bash)
-
-[//]: # (git clone https://github.com/your-username/math_ood.git)
-
-[//]: # (cd math_ood)
-
-[//]: # (pip install -r requirements.txt)
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # (**Required Dependencies:**)
-
-[//]: # (- `numpy`)
-
-[//]: # (- `sympy` )
-
-[//]: # (- `scipy`)
-
-[//]: # (- `matplotlib`)
-
-[//]: # (- `argparse`)
-
-[//]: # (- `collections`)
-
-### Generate Problems (Example)
+### Generate Problems
 
 Generate problems by difficulty level:
 ```bash
@@ -84,18 +51,18 @@ MathOOD covers six major mathematical domains:
 #### 1. Exploratory Generalization
 Tests scaling to more complex instances within the same domain:
 - **Training**: Simple 2x2 matrix determinants
-- **Testing**: Complex 5x5 matrix determinants
+- **Testing**: Complex 5x5 matrix determinants with special structures
 
 #### 2. Compositional Generalization  
 Tests combining multiple mathematical skills:
-- **Training**: Geometry (circle properties) + Algebra (function intersection)
+- **Example**: Geometry (circle properties) + Algebra (function intersection)
+- **Training**: Each skill learned separately
 - **Testing**: Problems requiring both skills simultaneously
 
 #### 3. Transformative Generalization
 Tests adoption of novel solution strategies:
 - **Training**: Standard polynomial root-finding methods
 - **Testing**: Complex analysis techniques (De Moivre's theorem)
-
 
 ## 🎯 Usage Examples
 
@@ -136,11 +103,6 @@ print(f"Question: {problem.question}")
 print(f"Answer: {problem.answer}")
 ```
 
-## 🤗 HuggingFace Datasets
-
-All generated problems are available on HuggingFace.
-
-
 ## 📚 Citation
 
 If you use MathOOD in your research, please cite:
@@ -150,20 +112,15 @@ If you use MathOOD in your research, please cite:
   title={MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning},
   author={Sun, Yiyou and Hu, Shawn and Zhou, Georgia and Zheng, Ken and Hajishirzi, Hannaneh and Dziri, Nouha and Song, Dawn},
   year={2025},
+  
 }
 ```
 
+[//]: # (journal={arXiv preprint arXiv:xxxx.xxxxx})
 
-[//]: # (  journal={arXiv preprint arXiv:xxxx.xxxxx})
+## 📄 License
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our contributing guidelines for:
-
-- Adding new problem generators
-- Extending generalization types
-- Improving evaluation metrics
-- Bug fixes and optimizations
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 
-For questions or issues, please open a GitHub issue or contact the authors. 
+For questions or issues, please open a GitHub issue or contact the authors.
