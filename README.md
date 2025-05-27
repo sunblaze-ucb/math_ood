@@ -23,15 +23,25 @@ MathOOD consists of programmatically generated training–test pairs derived fro
 
 Generate problems by difficulty level:
 ```bash
-python generate_basics_by_difficulty.py --difficulty 3 --num_samples 100
+# problem_types: 
+python generate_basics_by_difficulty.py --difficulty 3 --num_samples 10 --problem_types algebra_linear_equation algebra_polynomial_roots arithmetic_mixed arithmetic_list_prime_factors arithmetic_gcd
+
+python generate_matrix_by_difficulty.py --difficulty 3 --num_samples 10  --problem_types inverse multiplication determinant rank eigenvalues power svd
+
+python generate_function_by_difficulty.py --difficulty level_3 --num_samples 10  --problem_types intersection intersection_coords extrema extrema_coords area zeros derivative_sign
+
+python generate_combinatory_by_difficulty.py --difficulty 3 --num_samples 10  --type distribution
+python generate_combinatory_by_difficulty.py --difficulty 3 --num_samples 10  --type pattern_matching
+for event in no_fixed_points no_specific_letter_fixed exactly_n_specific_fixed at_least_n_specific_fixed; do
+  python generate_combinatory_by_difficulty.py --difficulty 3 --num_samples 10  --type probability --event $event
+done 
+for type in polygon circle triangle basic; do
+  python generate_geometry_by_difficulty.py --difficulty 3 --num_samples 10  --problem_types $type
+done 
+
 ```
 
-Generate specific problem types:
-```bash
-python generate_function_by_difficulty.py --type intersection --count 50
-python generate_matrix_by_difficulty.py --type determinant --size 4
-python generate_combinatory_by_difficulty.py --type probability --event no_fixed_points
-```
+Results will be stored in `problems/specific_difficulty`. 
 
 ## 📊 Benchmark Structure
 
@@ -46,17 +56,16 @@ MathOOD covers six major mathematical domains:
 - **🧩 Logic** - Grid-world problems, constraint satisfaction
 - **📊 Number Theory** - Quadratic residues, ordered sets
 
-### Generalization Types
+### Generalization Types (Example)
 
 #### 1. Exploratory Generalization
 Tests scaling to more complex instances within the same domain:
 - **Training**: Simple 2x2 matrix determinants
-- **Testing**: Complex 5x5 matrix determinants with special structures
+- **Testing**: Complex 5x5 matrix determinants
 
 #### 2. Compositional Generalization  
 Tests combining multiple mathematical skills:
-- **Example**: Geometry (circle properties) + Algebra (function intersection)
-- **Training**: Each skill learned separately
+- **Training**: Geometry (circle properties) + Algebra (function intersection)
 - **Testing**: Problems requiring both skills simultaneously
 
 #### 3. Transformative Generalization
@@ -64,44 +73,31 @@ Tests adoption of novel solution strategies:
 - **Training**: Standard polynomial root-finding methods
 - **Testing**: Complex analysis techniques (De Moivre's theorem)
 
-## 🎯 Usage Examples
+### Problem Collection Structure
 
-### Generate Matrix Problems
+The benchmark includes three specialized problem collections that implement different generalization paradigms:
 
-```python
-from modules.matrix_computations import generate_matrix_determinant_problem
+#### `problems/explorative/`
+Contains **exploratory generalization** datasets that test scaling within the same mathematical domain. Models are trained on low-complexity problems and evaluated on progressively harder instances from the same template. Examples:
+- **Algebra**: Function analysis (area, derivatives, extrema, intersections, zeros), linear equations, polynomial roots
+- **Arithmetic**: Number (GCD, prime factorization), matrix operations (determinant, eigenvalues, inverse, multiplication, power, rank, SVD)
+- **Combinatorics**: Probability analysis, pattern matching, distribution problems
 
-# Generate a determinant problem
-problem = generate_matrix_determinant_problem(size=3, min_val=-5, max_val=5)
-print(f"Question: {problem.question}")
-print(f"Answer: {problem.answer}")
-```
+#### `problems/compositional/`
+Features **compositional generalization** scenarios that combine distinct mathematical domains from training into novel multi-domain problems. Examples:
+- Algebra (polynomial roots) + Arithmetic (GCD)
+- Geometry (circles) + Algebra (function intersection) 
+- Combinatorics (probability) + Matrix operations (rank)
+- Geometry (polygon properties) + Pattern matching
 
-### Generate Function Analysis Problems
+#### `problems/transformative/`
+Presents **transformative generalization** challenges requiring fundamentally different solution approaches than those seen in training. Examples:
+- Matrix rank problems requiring advanced linear algebra techniques
+- Function intersection via complex analysis methods
+- Polynomial root-finding using De Moivre's theorem
+- Spatial reasoning problems requiring geometric transformations
 
-```python  
-from modules.function_analysis import generate_intersection_problem
-
-# Generate function intersection problem
-problem = generate_intersection_problem(difficulty=4)
-print(f"Question: {problem.question}")
-print(f"Answer: {problem.answer}")
-```
-
-### Generate Combinatorial Problems
-
-```python
-from modules.combinatories import generate_probability_problem
-
-# Generate probability problem
-problem = generate_probability_problem(
-    event_type="no_fixed_points",
-    length=6,
-    letters=['a', 'b', 'c']
-)
-print(f"Question: {problem.question}")
-print(f"Answer: {problem.answer}")
-```
+Each folder contains detailed README files with dataset links and problem descriptions.
 
 ## 📚 Citation
 

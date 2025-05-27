@@ -6,15 +6,154 @@ import os
 import argparse
 import logging
 import yaml
-from generate_basics_scaling_difficulty import (
-    load_difficulty_config,
-    configure_generator,
-    get_difficulty_info,
-    save_problems_to_jsonl
-)
+import functools
+# from generate_basics_scaling_difficulty import (
+#     load_difficulty_config,
+#     configure_generator,
+#     get_difficulty_info,
+#     save_problems_to_jsonl
+# )
 from modules.algebra import _solve_linear_system, polynomial_roots
 from modules.arithmetic import mixed
 from modules.number_probs import list_prime_factors, gcd
+from util import composition
+
+def load_difficulty_config(config_path="difficulty_configs/basics_config.yaml"):
+    """
+    Load difficulty configuration from YAML file.
+
+    Args:
+        config_path: Path to the configuration file
+
+    Returns:
+        Configuration dictionary
+    """
+    with open(config_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+
+def configure_generator(problem_type, level, generator_func, difficulty_config):
+    """Configure generator function based on problem type and difficulty level using config data."""
+
+    # Get level configuration
+    level_key = f"level_{level}"
+    config = difficulty_config["levels"].get(problem_type, {}).get(level_key, {})
+
+    if not config:
+        raise ValueError(f"No configuration found for {problem_type} at level {level}")
+
+    # Configure generator based on problem type using the config
+    if problem_type == 'algebra_linear_equation':
+        return functools.partial(
+            generator_func,
+            config.get("variables", 3),
+            None,
+            composition.PreSampleArgs(
+                config.get("min_ops", 1),
+                config.get("max_ops", 1),
+                config.get("min_length", 8),
+                config.get("max_length", 10)
+            )
+        )
+    elif problem_type == 'algebra_polynomial_roots':
+        return functools.partial(
+            generator_func,
+            config.get("degree", 2),
+            composition.PreSampleArgs(
+                config.get("min_ops", 1),
+                config.get("max_ops", 1),
+                config.get("min_length", 3),
+                config.get("max_length", 5)
+            )
+        )
+    elif problem_type == 'arithmetic_mixed':
+        return functools.partial(
+            generator_func,
+            config.get("type", "rational"),
+            composition.PreSampleArgs(
+                config.get("min_ops", 1),
+                config.get("max_ops", 1),
+                config.get("min_length", 4),
+                config.get("max_length", 9)
+            )
+        )
+    elif problem_type == 'arithmetic_list_prime_factors':
+        return functools.partial(
+            generator_func,
+            config.get("max_value", 25),
+            composition.PreSampleArgs(
+                config.get("min_ops", 1),
+                config.get("max_ops", 1),
+                config.get("min_length", 4),
+                config.get("max_length", 7)
+            )
+        )
+    elif problem_type == 'arithmetic_gcd':
+        return functools.partial(
+            generator_func,
+            None,
+            composition.PreSampleArgs(
+                config.get("min_ops", 1),
+                config.get("max_ops", 1),
+                config.get("min_length", 4),
+                config.get("max_length", 7)
+            )
+        )
+    else:
+        raise ValueError(f"Unknown problem type: {problem_type}")
+
+
+def get_difficulty_info(problem_type, level):
+    """Get difficulty information for problem metadata."""
+    difficulty_info = {
+        'level': level,
+        'description': ''
+    }
+
+    # Add difficulty descriptions
+    if level == 1:
+        difficulty_info['description'] = 'very easy'
+    elif level == 2:
+        difficulty_info['description'] = 'easy'
+    elif level == 3:
+        difficulty_info['description'] = 'medium'
+    elif level == 4:
+        difficulty_info['description'] = 'hard'
+    elif level == 5:
+        difficulty_info['description'] = 'very hard'
+
+    # Add problem-specific difficulty info
+    if problem_type == 'algebra_linear_equation':
+        difficulty_info['details'] = f"Linear equations at level {level}"
+    elif problem_type == 'algebra_polynomial_roots':
+        difficulty_info['details'] = f"Polynomial roots at level {level}"
+    elif problem_type == 'arithmetic_mixed':
+        difficulty_info['details'] = f"Mixed arithmetic at level {level}"
+    elif problem_type == 'arithmetic_list_prime_factors':
+        difficulty_info['details'] = f"Prime factorization at level {level}"
+    elif problem_type == 'arithmetic_gcd':
+        difficulty_info['details'] = f"GCD calculations at level {level}"
+
+    return difficulty_info
+
+
+def save_problems_to_jsonl(problems, filename):
+    """Save problems to a JSONL file.
+
+    Args:
+        problems: List of problem dictionaries
+        filename: Path to the output file
+    """
+    # Create directory if it doesn't exist
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    # Write problems to a JSONL file
+    with open(filename, 'w', encoding='utf-8') as f:
+        for problem in problems:
+            f.write(json.dumps(problem, ensure_ascii=False) + '\n')
+
+    logging.info(f"Saved {len(problems)} problems to {filename}")
 
 def generate_problems_at_difficulty(
     difficulty_level,

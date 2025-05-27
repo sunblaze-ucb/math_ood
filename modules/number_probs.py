@@ -23,7 +23,7 @@ import math
 import random
 
 # Dependency imports
-import example
+import util.example as example
 from sample import number
 from util import composition
 from util import display

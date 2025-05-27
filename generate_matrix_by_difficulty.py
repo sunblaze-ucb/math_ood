@@ -3,7 +3,7 @@
 import json
 import argparse
 import os
-from generate_matrix_scaling_difficulty import (
+from util.generate_matrix_scaling_difficulty import (
     load_config,
     NumpyEncoder,
     generate_matrix_inverse_problem,
@@ -224,16 +224,16 @@ def main():
     """Parse command line arguments and generate problems"""
     parser = argparse.ArgumentParser(description='Generate math problems with specific difficulty level')
     
-    parser.add_argument('--type', type=str, required=True,
+    parser.add_argument('--problem_types', type=str, nargs='+', required=True,
                       choices=['inverse', 'multiplication', 'determinant', 'rank', 
                                'eigenvalues', 'power', 'svd'],
-                      help='Problem type to generate')
+                      help='Problem types to generate (can specify multiple)')
     
-    parser.add_argument('--level', type=int, required=True,
+    parser.add_argument('--difficulty', type=int, required=True,
                         help='Difficulty level to generate problems for')
     
-    parser.add_argument('--samples', type=int, default=1000,
-                        help='Number of problems to generate')
+    parser.add_argument('--num_samples', type=int, default=1000,
+                        help='Number of problems to generate per problem type')
     
     parser.add_argument('--config', type=str, default="difficulty_configs/matrix_config.yaml",
                         help='Path to YAML configuration file')
@@ -246,15 +246,28 @@ def main():
     
     args = parser.parse_args()
     
-    # Generate problems
-    generate_specific_difficulty_problems(
-        problem_type=args.type,
-        difficulty_level=args.level,
-        num_samples=args.samples,
-        config_path=args.config,
-        output_file=args.output,
-        seed=args.seed
-    )
+    # Generate problems for each problem type
+    all_problems = []
+    for problem_type in args.problem_types:
+        print(f"\n=== Generating {problem_type} problems ===")
+        
+        # Generate output filename for this problem type if base output is specified
+        if args.output and len(args.problem_types) == 1:
+            output_file = args.output
+        else:
+            output_file = f"problems/specific_difficulty/arithmetic_matrix_{problem_type}_level_{args.difficulty}.jsonl"
+        problems = generate_specific_difficulty_problems(
+            problem_type=problem_type,
+            difficulty_level=args.difficulty,
+            num_samples=args.num_samples,
+            config_path=args.config,
+            output_file=output_file,
+            seed=args.seed
+        )
+        
+        all_problems.extend(problems)
+    
+    print(f"\nTotal problems generated: {len(all_problems)}")
 
 if __name__ == "__main__":
     main() 

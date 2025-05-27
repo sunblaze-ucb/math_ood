@@ -1,0 +1,141 @@
+---
+# Configuration for function analysis problem generation
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  area:
+    level_1:
+      composition_nums: 2
+      difficulty: 5
+      max_answer: 50
+    level_2:
+      composition_nums: 3 
+      difficulty: 8
+      max_answer: 100
+    level_3:
+      composition_nums: 4
+      difficulty: 10
+      max_answer: 150
+    level_4:
+      composition_nums: 5
+      difficulty: 12
+      max_answer: 250
+    level_5:
+      composition_nums: 6
+      difficulty: 15
+      max_answer: 500
+  
+  intersection_coords:
+    level_1:
+      composition_nums: 2
+      difficulty: 5
+    level_2:
+      composition_nums: 3
+      difficulty: 8
+    level_3:
+      composition_nums: 4
+      difficulty: 10
+    level_4:
+      composition_nums: 5
+      difficulty: 12
+    level_5:
+      composition_nums: 6
+      difficulty: 15
+  
+  extrema_coords:
+    level_1:
+      composition_nums: 2
+      difficulty: 5
+    level_2:
+      composition_nums: 3
+      difficulty: 8
+    level_3:
+      composition_nums: 4
+      difficulty: 10
+    level_4:
+      composition_nums: 5
+      difficulty: 12
+    level_5:
+      composition_nums: 6
+      difficulty: 15
+  
+  derivative_sign:
+    level_1:
+      composition_nums: 2
+      min_answer: 3
+    level_2:
+      composition_nums: 3
+      min_answer: 3
+    level_3:
+      composition_nums: 4
+      min_answer: 3
+    level_4:
+      composition_nums: 5
+      min_answer: 3
+    level_5:
+      composition_nums: 6
+      min_answer: 3
+  
+  intersection:
+    level_1:
+      composition_nums: 2
+      min_answer: 3
+    level_2:
+      composition_nums: 3
+      min_answer: 3
+    level_3:
+      composition_nums: 4
+      min_answer: 3
+    level_4:
+      composition_nums: 5
+      min_answer: 3
+    level_5:
+      composition_nums: 6
+      min_answer: 3
+  
+  extrema:
+    level_1:
+      composition_nums: 2
+      min_answer: 3
+    level_2:
+      composition_nums: 3
+      min_answer: 3
+    level_3:
+      composition_nums: 4
+      min_answer: 3
+    level_4:
+      composition_nums: 5
+      min_answer: 3
+    level_5:
+      composition_nums: 6
+      min_answer: 3
+  
+  zeros:
+    level_1:
+      composition_nums: 2
+      min_answer: 3
+    level_2:
+      composition_nums: 3
+      min_answer: 3
+    level_3:
+      composition_nums: 4
+      min_answer: 3
+    level_4:
+      composition_nums: 5
+      min_answer: 3
+    level_5:
+      composition_nums: 6
+      min_answer: 3
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

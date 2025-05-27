@@ -24,7 +24,7 @@ import random
 import string
 
 # Dependency imports
-import example
+import util.example as example
 from modules import train_test_split
 from util import combinatorics
 from util import composition

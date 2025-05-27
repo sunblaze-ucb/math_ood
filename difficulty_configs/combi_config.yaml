@@ -1,0 +1,80 @@
+---
+# Configuration for problem generation parameters
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  distribution:
+    level_1:
+      num_letter_types_range: [2, 2]
+      num_boxes_range: [2, 2]
+      total_letters_range: [4, 6]
+    level_2:
+      num_letter_types_range: [3, 3]
+      num_boxes_range: [3, 3]
+      total_letters_range: [6, 8]
+    level_3:
+      num_letter_types_range: [4, 4]
+      num_boxes_range: [4, 4]
+      total_letters_range: [8, 10]
+    level_4:
+      num_letter_types_range: [4, 4]
+      num_boxes_range: [4, 4]
+      total_letters_range: [11, 11]
+    level_5:
+      num_letter_types_range: [4, 4]
+      num_boxes_range: [4, 4]
+      total_letters_range: [12, 12]
+  
+  pattern_matching:
+    level_1:
+      length_range: [2, 2]
+      total_letters_range: [4, 6]
+    level_2:
+      length_range: [3, 3]
+      total_letters_range: [6, 8]
+    level_3:
+      length_range: [4, 4]
+      total_letters_range: [9, 10]
+    level_4:
+      length_range: [5, 5]
+      total_letters_range: [10, 12]
+    level_5:
+      length_range: [6, 6]
+      total_letters_range: [12, 14]
+  
+  probability:
+    level_1:
+      length_range: [2, 3]
+      total_letters_range: [4, 6]
+    level_2:
+      length_range: [3, 4]
+      total_letters_range: [6, 8]
+    level_3:
+      length_range: [4, 5]
+      total_letters_range: [8, 9]
+    level_4:
+      length_range: [4, 5]
+      total_letters_range: [10, 11]
+    level_5:
+      length_range: [5, 6]
+      total_letters_range: [11, 12]
+  
+# Event types for probability problems
+event_types:
+  - no_fixed_points
+  - no_specific_letter_fixed
+  - exactly_n_specific_fixed
+  - at_least_n_specific_fixed
+
+# Model-specific configurations
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

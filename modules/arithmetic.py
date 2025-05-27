@@ -23,7 +23,7 @@ import math
 import random
 
 # Dependency imports
-import example
+import util.example as example
 from sample import arithmetic
 from sample import number
 from sample import ops

@@ -1,0 +1,82 @@
+---
+# Configuration for math problem generation parameters
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  basic:
+    level_1:
+      min_length: 6
+      max_length: 9
+    level_2:
+      min_length: 10
+      max_length: 13
+    level_3:
+      min_length: 14
+      max_length: 17
+    level_4:
+      min_length: 18
+      max_length: 21
+    level_5:
+      min_length: 22
+      max_length: 25
+  polygon:
+    level_1:
+      min_length: 6
+      max_length: 9
+    level_2:
+      min_length: 10
+      max_length: 13
+    level_3:
+      min_length: 14
+      max_length: 17
+    level_4:
+      min_length: 18
+      max_length: 21
+    level_5:
+      min_length: 22
+      max_length: 25
+  circle:
+    level_1:
+      min_length: 6
+      max_length: 9
+    level_2:
+      min_length: 10
+      max_length: 13
+    level_3:
+      min_length: 14
+      max_length: 17
+    level_4:
+      min_length: 18
+      max_length: 21
+    level_5:
+      min_length: 22
+      max_length: 25
+  triangle:
+    level_1:
+      min_length: 6
+      max_length: 9
+    level_2:
+      min_length: 10
+      max_length: 13
+    level_3:
+      min_length: 14
+      max_length: 17
+    level_4:
+      min_length: 18
+      max_length: 21
+    level_5:
+      min_length: 22
+      max_length: 25
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

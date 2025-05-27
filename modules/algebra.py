@@ -22,7 +22,7 @@ import functools
 import random
 
 # Dependency imports
-import example
+import util.example as example
 from sample import linear_system
 from sample import number
 from sample import ops

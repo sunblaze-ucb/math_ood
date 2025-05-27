@@ -1,0 +1,296 @@
+---
+# Configuration for matrix problem generation parameters
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  inverse:
+    level_1:
+      rows: 3
+      min_val: -10
+      max_val: 10
+      matrix_types: [null, "symmetric", "triangular"]
+    level_2:
+      rows: 4
+      min_val: -12
+      max_val: 12
+      matrix_types: [null, "symmetric", "triangular"]
+    level_3:
+      rows: 6
+      min_val: -15
+      max_val: 15
+      matrix_types: [null, "symmetric", "triangular"]
+    level_4:
+      rows: 7
+      min_val: -18
+      max_val: 18
+      matrix_types: [null, "symmetric", "triangular"]
+    level_5:
+      rows: 9
+      min_val: -25
+      max_val: 25
+      matrix_types: [null, "symmetric", "triangular"]
+    level_6:
+      rows: 10
+      min_val: -30
+      max_val: 30
+      matrix_types: [null, "symmetric", "triangular"]
+    level_7:
+      rows: 12
+      min_val: -35
+      max_val: 35
+      matrix_types: [null, "symmetric", "triangular"]
+  
+  determinant:
+    level_1:
+      rows: 3
+      min_val: -10
+      max_val: 10
+      matrix_types: [null, "symmetric", "triangular"]
+    level_2:
+      rows: 4
+      min_val: -12
+      max_val: 12
+      matrix_types: [null, "symmetric", "triangular"]
+    level_3:
+      rows: 6
+      min_val: -15
+      max_val: 15
+      matrix_types: [null, "symmetric", "triangular"]
+    level_4:
+      rows: 7
+      min_val: -18
+      max_val: 18
+      matrix_types: [null, "symmetric", "triangular"]
+    level_5:
+      rows: 9
+      min_val: -25
+      max_val: 25
+      matrix_types: [null, "symmetric", "triangular"]
+    level_6:
+      rows: 10
+      min_val: -30
+      max_val: 30
+      matrix_types: [null, "symmetric", "triangular"]
+    level_7:
+      rows: 12
+      min_val: -35
+      max_val: 35
+      matrix_types: [null, "symmetric", "triangular"]
+  
+  eigenvalues:
+    level_1:
+      rows: 3
+      min_val: -10
+      max_val: 10
+      matrix_types: [null, "symmetric", "triangular"]
+    level_2:
+      rows: 4
+      min_val: -12
+      max_val: 12
+      matrix_types: [null, "symmetric", "triangular"]
+    level_3:
+      rows: 6
+      min_val: -15
+      max_val: 15
+      matrix_types: [null, "symmetric", "triangular"]
+    level_4:
+      rows: 7
+      min_val: -18
+      max_val: 18
+      matrix_types: [null, "symmetric", "triangular"]
+    level_5:
+      rows: 9
+      min_val: -25
+      max_val: 25
+      matrix_types: [null, "symmetric", "triangular"]
+    level_6:
+      rows: 10
+      min_val: -30
+      max_val: 30
+      matrix_types: [null, "symmetric", "triangular"]
+    level_7:
+      rows: 12
+      min_val: -35
+      max_val: 35
+      matrix_types: [null, "symmetric", "triangular"]
+  
+  power:
+    level_1:
+      rows: 3
+      min_val: -3
+      max_val: 3
+      min_power: 2
+      max_power: 3
+      matrix_types: [null, "symmetric", "triangular"]
+    level_2:
+      rows: 4
+      min_val: -4
+      max_val: 4
+      min_power: 3
+      max_power: 4
+      matrix_types: [null, "symmetric"]
+    level_3:
+      rows: 5
+      min_val: -5
+      max_val: 5
+      min_power: 4
+      max_power: 5
+      matrix_types: [null, "symmetric"]
+    level_4:
+      rows: 6
+      min_val: -6
+      max_val: 6
+      min_power: 4
+      max_power: 5
+      matrix_types: [null, "symmetric"]
+    level_5:
+      rows: 8
+      min_val: -12
+      max_val: 12
+      min_power: 5
+      max_power: 7
+      matrix_types: [null, "symmetric"]
+    level_6:
+      rows: 10
+      min_val: -14
+      max_val: 14
+      min_power: 6
+      max_power: 8
+      matrix_types: [null, "symmetric"]
+    level_7:
+      rows: 12
+      min_val: -16
+      max_val: 16
+      min_power: 7
+      max_power: 9
+      matrix_types: [null, "symmetric"]
+  
+  multiplication:
+    level_1:
+      min_dim: 3
+      max_dim: 5
+      min_val: -8
+      max_val: 8
+    level_2:
+      min_dim: 4
+      max_dim: 6
+      min_val: -10
+      max_val: 10
+    level_3:
+      min_dim: 6
+      max_dim: 7
+      min_val: -12
+      max_val: 12
+    level_4:
+      min_dim: 7
+      max_dim: 8
+      min_val: -15
+      max_val: 15
+    level_5:
+      min_dim: 9
+      max_dim: 10
+      min_val: -20
+      max_val: 20
+    level_6:
+      min_dim: 10
+      max_dim: 11
+      min_val: -25
+      max_val: 25
+    level_7:
+      min_dim: 12
+      max_dim: 14
+      min_val: -30
+      max_val: 30
+  
+  svd:
+    level_1:
+      rows: 4
+      cols: 4
+      min_val: -4
+      max_val: 4
+    level_2:
+      rows: 5
+      cols: 5
+      min_val: -6
+      max_val: 6
+    level_3:
+      rows: 6
+      cols: 6
+      min_val: -10
+      max_val: 10
+    level_4:
+      rows: 7
+      cols: 7
+      min_val: -12
+      max_val: 12
+    level_5:
+      rows: 9
+      cols: 9
+      min_val: -18
+      max_val: 18
+    level_6:
+      rows: 10
+      cols: 10
+      min_val: -22
+      max_val: 22
+    level_7:
+      rows: 12
+      cols: 12
+      min_val: -26
+      max_val: 26
+  
+  rank:
+    level_1:
+      rows: 4
+      cols: 4
+      min_val: -4
+      max_val: 4
+    level_2:
+      rows: 5
+      cols: 5
+      min_val: -6
+      max_val: 6
+    level_3:
+      rows: 6
+      cols: 6
+      min_val: -10
+      max_val: 10
+    level_4:
+      rows: 7
+      cols: 7
+      min_val: -12
+      max_val: 12
+    level_5:
+      rows: 9
+      cols: 9
+      min_val: -18
+      max_val: 18
+    level_6:
+      rows: 10
+      cols: 10
+      min_val: -22
+      max_val: 22
+    level_7:
+      rows: 12
+      cols: 12
+      min_val: -26
+      max_val: 26
+
+# Default parameters for problem generation
+defaults:
+  samples_per_level: 100
+  min_level: 1
+  max_level: 7
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4

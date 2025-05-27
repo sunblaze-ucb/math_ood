@@ -288,9 +288,9 @@ def main():
                         choices=['no_fixed_points', 'no_specific_letter_fixed', 
                                 'exactly_n_specific_fixed', 'at_least_n_specific_fixed'],
                         help='Event type for probability problems (only used with --type=probability)')
-    parser.add_argument('--samples', type=int, default=10,
+    parser.add_argument('--num_samples', type=int, default=10,
                         help='Number of samples to generate (default: 10)')
-    parser.add_argument('--output_dir', type=str, default="problems/single_difficulty",
+    parser.add_argument('--output_dir', type=str, default="problems/specific_difficulty",
                         help='Output directory for problem files')
     parser.add_argument('--config', type=str, default="difficulty_configs/combi_config.yaml",
                         help='Path to the configuration YAML file')
@@ -308,7 +308,7 @@ def main():
     # Generate problems based on specified type
     if args.type == 'distribution' or args.type == 'all':
         distribution_problems = generate_distribution_problems(
-            args.difficulty, args.samples, args.output_dir, config
+            args.difficulty, args.num_samples, args.output_dir, config
         )
         save_problems_to_file(
             distribution_problems,
@@ -318,7 +318,7 @@ def main():
     
     if args.type == 'pattern_matching' or args.type == 'all':
         pattern_matching_problems = generate_pattern_matching_problems(
-            args.difficulty, args.samples, args.output_dir, config
+            args.difficulty, args.num_samples, args.output_dir, config
         )
         save_problems_to_file(
             pattern_matching_problems,
@@ -338,7 +338,7 @@ def main():
         # If specific event type requested, only generate that type
         if args.event_type:
             probability_problems = generate_probability_problems(
-                args.difficulty, args.samples, args.output_dir, config, args.event_type
+                args.difficulty, args.num_samples, args.output_dir, config, args.event_type
             )
             save_problems_to_file(
                 probability_problems,
@@ -351,7 +351,7 @@ def main():
             for event_type in event_types:
                 print(f"\nGenerating event type: {event_type}")
                 probability_problems = generate_probability_problems(
-                    args.difficulty, args.samples, args.output_dir, config, event_type
+                    args.difficulty, args.num_samples, args.output_dir, config, event_type
                 )
                 
                 # Save individual event type file
