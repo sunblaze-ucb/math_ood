@@ -1,0 +1,74 @@
+---
+# Configuration for number theory problem generation
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  prime_mod:
+    level_1:
+      difficulty: 1
+      min_answer: 1
+      max_answer: 10
+    level_2:
+      difficulty: 2
+      min_answer: 1 
+      max_answer: 100
+    level_3:
+      difficulty: 3
+      min_answer: 10 
+      max_answer: 100
+    level_4:
+      difficulty: 4
+      min_answer: 100 
+      max_answer: 1000
+    level_5:
+      difficulty: 5
+      min_answer: 1000 
+      max_answer: 10000000
+
+  triple_count:
+    level_1:
+      difficulty: 1
+      min_answer: 1
+      max_answer: 10
+    level_2:
+      difficulty: 2
+      min_answer: 1 
+      max_answer: 100
+    level_3:
+      difficulty: 3
+      min_answer: 10 
+      max_answer: 100
+    level_4:
+      difficulty: 4
+      min_answer: 100 
+      max_answer: 1000
+    level_5:
+      difficulty: 5
+      min_answer: 1000 
+      max_answer: 10000000
+
+  digit_sum:
+    level_1:
+      difficulty: 1
+    level_2:
+      difficulty: 2 
+    level_3:
+      difficulty: 3
+    level_4:
+      difficulty: 4
+    level_5:
+      difficulty: 5
+
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

@@ -38,7 +38,9 @@ done
 for type in polygon circle triangle basic; do
   python generate_geometry_by_difficulty.py --difficulty 3 --num_samples 10  --problem_types $type
 done 
-
+for type in prime_mod triple_count digit_sum; do
+  python generate_number_theory_by_difficulty.py --difficulty 3 --num_samples 10  --problem_types $type
+done 
 ```
 
 Results will be stored in `problems/specific_difficulty`. 
