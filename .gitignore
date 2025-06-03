@@ -3,6 +3,8 @@ modules/geometry/passed
 modules/geometry/failed
 modules/geometry/natural_language_problems
 
+problems/
+
 *.swp
 *.swo
 *.un~
