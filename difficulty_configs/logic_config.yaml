@@ -1,0 +1,89 @@
+---
+# Configuration for math problem generation parameters
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  blocked_grid:
+    level_1:
+      min_grid_size: 5
+      max_grid_size: 9
+    level_2:
+      min_grid_size: 10
+      max_grid_size: 19
+    level_3:
+      min_grid_size: 20
+      max_grid_size: 29
+    level_4:
+      min_grid_size: 30
+      max_grid_size: 39
+    level_5:
+      min_grid_size: 40
+      max_grid_size: 49
+  grid_knight:
+    level_1:
+      min_grid_size: 5
+      max_grid_size: 9
+    level_2:
+      min_grid_size: 10
+      max_grid_size: 19
+    level_3:
+      min_grid_size: 20
+      max_grid_size: 29
+    level_4:
+      min_grid_size: 30
+      max_grid_size: 39
+    level_5:
+      min_grid_size: 40
+      max_grid_size: 49
+  grid_rook:
+    level_1:
+      min_grid_size: 5
+      max_grid_size: 9
+    level_2:
+      min_grid_size: 10
+      max_grid_size: 19
+    level_3:
+      min_grid_size: 20
+      max_grid_size: 29
+    level_4:
+      min_grid_size: 30
+      max_grid_size: 39
+    level_5:
+      min_grid_size: 40
+      max_grid_size: 49
+  zebralogic:
+    level_1:
+      grid_max_dim: 2
+    level_2:
+      grid_max_dim: 3
+    level_3:
+      grid_max_dim: 4
+    level_4:
+      grid_max_dim: 5
+    level_5:
+      grid_max_dim: 6
+  grid_chip:
+    level_1:
+      grid_size: 4
+    level_2:
+      grid_size: 5
+    level_3:
+      grid_size: 6
+    level_4:
+      grid_size: 7
+    level_5:
+      grid_size: 8
+
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

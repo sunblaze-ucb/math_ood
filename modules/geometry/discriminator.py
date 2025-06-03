@@ -105,7 +105,7 @@ def test_measure_construction(file_path, num_tests=20, precision=4, verbosity=0)
         print(f"PASS: {results['pass']}")
     return results
 
-def process_file(directory_path, filename, passed_dir="passed", failed_dir="failed", num_tests=20, verbosity=False, move_files=True):
+def process_file(directory_path, filename, passed_dir="passed", failed_dir="failed", num_tests=20, verbosity=False, move_files=True) -> tuple[Optional[str], Optional[float]]:
     file_path = os.path.join(directory_path, filename)
     if verbosity: 
         print(f"Testing {filename}...")
