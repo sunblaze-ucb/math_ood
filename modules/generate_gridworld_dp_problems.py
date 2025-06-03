@@ -174,6 +174,8 @@ def generate_n_blocked_gridworld_problems(min_dim, max_dim, n, blocked_cell_mult
     for _ in range(n):
         width = random.randint(min_dim, max_dim)
         height = random.randint(min_dim, max_dim)
+        if min_blocked > int(width * blocked_cell_multiplier):
+            min_blocked = int(width * blocked_cell_multiplier)
         num_blocked_cells = random.randint(min_blocked, int(width * blocked_cell_multiplier))
         blocked_cells = []
         while True:
