@@ -1,7 +1,12 @@
+
+# count shortest path from bottom left to top right
+# while only moving using a knight's move
 import argparse
+from typing import Tuple, List
 import os
 import json
 import random
+
 
 def generate_num_colorings_problem(min_vertices, max_vertices):
     num_vertices = random.randint(min_vertices, max_vertices)
@@ -96,8 +101,8 @@ def generate_max_cover_problem(min_vertices, max_vertices):
     }
 
 def generate_n_constraint_problems(n, min_vertices, max_vertices):
-    strings = []
-    while len(strings) < n:
+    problems = []
+    while len(problems) < n:
         random_number = random.random()
         if random_number < 0.4:
             problem = generate_num_colorings_problem(min_vertices, max_vertices)
@@ -105,12 +110,13 @@ def generate_n_constraint_problems(n, min_vertices, max_vertices):
             problem = generate_num_covered_problem(min_vertices, max_vertices)
         else:
             problem = generate_max_cover_problem(min_vertices, max_vertices)
-        strings.append(json.dumps(problem))
-    return strings
+        problems.append(problem)
+    return problems
 
 def generate_constraint_maximization_problems(args):
-    with open(os.path.join(args.output_dir, f"rotation_covering_train.jsonl"), 'w') as f:
-        f.write("\n".join(generate_n_constraint_problems(args.train_samples)))
+    with open(os.path.join(args.output_dir, f"polygon_coloring_train.jsonl"), 'w') as f:
+        for problem in generate_n_constraint_problems(args.train_samples, args.min_vertices, args.max_vertices):
+            f.write(json.dumps(problem, ensure_ascii=False) + '\n')
 
 def main():
     parser = argparse.ArgumentParser(description='Generate function analysis problems')

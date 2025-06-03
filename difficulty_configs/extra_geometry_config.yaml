@@ -1,0 +1,66 @@
+---
+# Configuration for math problem generation parameters
+# Levels are defined independently, then referenced by model sizes
+
+# Define difficulty levels for all problem types
+levels:
+  polygon_chords:
+    level_1:
+      min_num_diagonals: 6
+      max_num_diagonals: 7
+    level_2:
+      min_num_diagonals: 8
+      max_num_diagonals: 9
+    level_3:
+      min_num_diagonals: 10
+      max_num_diagonals: 11
+    level_4:
+      min_num_diagonals: 12
+      max_num_diagonals: 13
+    level_5:
+      min_num_diagonals: 14
+      max_num_diagonals: 15
+  polygon_color:
+    level_1:
+      min_vertices: 6
+      max_vertices: 7
+    level_2:
+      min_vertices: 8
+      max_vertices: 9
+    level_3:
+      min_vertices: 10
+      max_vertices: 11
+    level_4:
+      min_vertices: 12
+      max_vertices: 13
+    level_5:
+      min_vertices: 14
+      max_vertices: 15
+  rotation:
+    level_1:
+      min_num_diagonals: 2
+      max_num_diagonals: 2
+    level_2:
+      min_num_diagonals: 3
+      max_num_diagonals: 3
+    level_3:
+      min_num_diagonals: 4
+      max_num_diagonals: 4
+    level_4:
+      min_num_diagonals: 5
+      max_num_diagonals: 5
+    level_5:
+      min_num_diagonals: 6
+      max_num_diagonals: 6
+
+# Model-specific configurations mapping difficulty to levels
+models:
+  7B:
+    medium: level_1  # corresponds to difficulty level 1
+    hard: level_2    # corresponds to difficulty level 2
+    exhard: level_3  # corresponds to difficulty level 3
+  
+  32B:
+    medium: level_2  # corresponds to difficulty level 2
+    hard: level_3    # corresponds to difficulty level 3
+    exhard: level_4  # corresponds to difficulty level 4 

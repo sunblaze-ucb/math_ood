@@ -2,6 +2,7 @@
 modules/geometry/passed
 modules/geometry/failed
 modules/geometry/natural_language_problems
+polygon_diagrams/
 
 problems/
 
