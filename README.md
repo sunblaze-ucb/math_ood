@@ -41,6 +41,12 @@ done
 for type in prime_mod triple_count digit_sum; do
   python generate_number_theory_by_difficulty.py --difficulty 3 --num_samples 10  --problem_types $type
 done 
+for type in polygon_chords polygon_color rotation; do
+  python generate_extra_geometry_by_difficulty.py --difficulty level_3 --num_samples 10  --problem_types $type
+done 
+for type in blocked_grid grid_knight grid_rook zebralogic grid_chip; do
+  python generate_logic_puzzles_by_difficulty.py --difficulty level_3 --num_samples 10  --problem_types $type
+done 
 ```
 
 Results will be stored in `problems/specific_difficulty`. 
