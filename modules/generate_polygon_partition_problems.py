@@ -94,7 +94,7 @@ def count_connected_components(image_path):
         # Check if any contours were found
         if len(contours) > 0:
             # Method 1: Use approxPolyDP to approximate the contour to the hexagon corners
-            epsilon = 0.02 * cv2.arcLength(contours[0], True)  # Precision parameter
+            epsilon = 0.005 * cv2.arcLength(contours[0], True)  # Precision parameter
             approx = cv2.approxPolyDP(contours[0], epsilon, True)
             approxs.append(len(approx))
         else:
@@ -113,11 +113,11 @@ def count_connected_components(image_path):
     '''
     return approxs
 
-def generate_dataset(num_images=100, min_diagonals=1, max_diagonals=4, seed=0, output_path=None):
+def generate_dataset(num_images=100, min_diagonals=1, max_diagonals=4, min_sides=6, max_sides=13, seed=0, output_path=None):
     np.random.seed(seed)
     problems = []
     for i in range(num_images):
-        num_sides = np.random.randint(6, 13)
+        num_sides = np.random.randint(min_sides, max_sides)
         num_diagonals = np.random.randint(min_diagonals, max_diagonals + 1)
         if num_diagonals == 1 and random.random() < 0.75: # just a manual hack. there were too many of these and they are too easy.
             num_diagonals = 2
@@ -128,13 +128,13 @@ def generate_dataset(num_images=100, min_diagonals=1, max_diagonals=4, seed=0, o
             "rotation_vertices": rotation_vertices,
             "seed": seed
         }
-        image_path, problem = create_polygon_image(size=500, idx=i, num_sides=num_sides, num_diagonals=num_diagonals, rotation_vertices=rotation_vertices, line_width=3, seed=seed)
+        image_path, problem = create_polygon_image(size=10000, idx=i, num_sides=num_sides, num_diagonals=num_diagonals, rotation_vertices=rotation_vertices, line_width=3, seed=seed)
         if image_path is None:
             continue
         polygon_sides = count_connected_components(image_path)
 
         a = random.random()
-        if a < 0.4:
+        if a < 0.0:
             problem += " How many such polygons will there be?"
             newjson["answer_type"] = "count"
             answer = len(polygon_sides)

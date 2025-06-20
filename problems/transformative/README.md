@@ -43,7 +43,7 @@ Transformative generalization presents the greatest challenge in mathematical re
 ### Setting 5: Function Integration - Advanced Calculus
 
 **Training Dataset:**
-- [Algebra - Function Integration](https://huggingface.co/datasets/sunyiyou/math_algebra_function_integration_7B_train)
+- [Algebra - Function Integration](https://huggingface.co/datasets/sunyiyou/math_algebra_func_integral_train)
 
 **Evaluation Dataset:**
 - [Transformative Integrations](https://huggingface.co/datasets/sunyiyou/math_trans_integrations)

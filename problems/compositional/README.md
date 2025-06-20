@@ -65,7 +65,7 @@ Each compositional setting combines two distinct mathematical domains from the t
 ### Setting 7: Logic (Grid Chip) + Combinatorics (Probability)
 
 **Training Datasets:**
-- [Logic - Grid Chip](https://huggingface.co/datasets/sunyiyou/math_logic_grid_chip_7B_train)
+- [Logic - Grid Chip](https://huggingface.co/datasets/sunyiyou/math_logic_puzzles_grid_chip_7B_train)
 - [Combinatorics - Probability (No Fixed Letter)](https://huggingface.co/datasets/sunyiyou/math_combinatory_probability_no-specific-letter-fixed_7B_train)
 
 **Evaluation Dataset:**

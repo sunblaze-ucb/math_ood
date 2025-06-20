@@ -87,7 +87,7 @@ def generate_distribution_problems(difficulty_level, num_samples, output_dir, co
             problems.append(problem_entry)
             count += 1
             
-            if count % 5 == 0 or count == num_samples:
+            if count % 1 == 0 or count == num_samples:
                 print(f"Generated {count}/{num_samples} problems")
             
         except Exception as e:

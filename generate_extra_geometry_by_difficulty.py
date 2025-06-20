@@ -101,7 +101,7 @@ def generate_problems_with_difficulty(
         elif problem_type == 'polygon_color':
             problems = polygon_color_get_n_samples(num_samples, level_config.get('min_vertices', 6), level_config.get('max_vertices', 12))
         elif problem_type == 'rotation':
-            problems = rotation_get_n_samples(num_samples, level_config.get('min_num_diagonals', 1), level_config.get('max_num_diagonals', 4))
+            problems = rotation_get_n_samples(num_samples, level_config.get('min_num_diagonals', 1), level_config.get('max_num_diagonals', 4), level_config.get('min_vertices', 6), level_config.get('max_vertices', 12))
         
         # Save problems to a file
         filename = os.path.join(output_dir, f"geometry_{problem_type}_{difficulty_level}.jsonl")
@@ -134,7 +134,7 @@ def main():
                         help='Difficulty level to generate (e.g., level_3)')
     parser.add_argument('--problem_types', type=str, nargs='+', default=None,
                         help='List of problem types to generate (default: all types)')
-    parser.add_argument('--num_samples', type=int, default=20,
+    parser.add_argument('--num_samples', type=int, default=30,
                         help='Number of samples to generate (default: 20)')
     parser.add_argument('--output_dir', type=str, default="problems/specific_difficulty",
                         help='Output directory for problem files')

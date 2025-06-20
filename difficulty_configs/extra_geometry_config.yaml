@@ -52,6 +52,11 @@ levels:
     level_5:
       min_num_diagonals: 6
       max_num_diagonals: 6
+    level_6:
+      min_num_diagonals: 7
+      max_num_diagonals: 12
+      min_vertices: 20
+      max_vertices: 25
 
 # Model-specific configurations mapping difficulty to levels
 models:

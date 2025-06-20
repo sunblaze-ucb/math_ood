@@ -25,6 +25,10 @@ levels:
       num_letter_types_range: [4, 4]
       num_boxes_range: [4, 4]
       total_letters_range: [12, 12]
+    level_6:
+      num_letter_types_range: [ 5, 5 ]
+      num_boxes_range: [ 5, 5 ]
+      total_letters_range: [ 13, 13 ]
   
   pattern_matching:
     level_1:
