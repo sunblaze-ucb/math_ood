@@ -112,12 +112,12 @@ Each folder contains detailed README files with dataset links and problem descri
 If you use OMEGA in your research, please cite:
 
 ```bibtex
-@article{{sun2024omega,
-  title     = {{OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization}},
-  author    = {{Yiyou Sun and Shawn Hu and Georgia Zhou and Ken Zheng and Hannaneh Hajishirzi and Nouha Dziri and Dawn Song}},
-  journal   = {{arXiv preprint arXiv:2506.18880}},
-  year      = {{2024}},
-}}
+@article{sun2024omega,
+  title     = {OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization},
+  author    = {Yiyou Sun and Shawn Hu and Georgia Zhou and Ken Zheng and Hannaneh Hajishirzi and Nouha Dziri and Dawn Song},
+  journal   = {arXiv preprint arXiv:2506.18880},
+  year      = {2024},
+}
 ```
 
 ## 📄 License
