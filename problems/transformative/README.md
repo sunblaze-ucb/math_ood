@@ -1,5 +1,5 @@
 # Transformative Math Problem Settings
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-transformative)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/allenai/omega-transformative)
 
 This directory contains transformative mathematical problem settings that test the most challenging form of generalization: the ability to abandon familiar but ineffective strategies in favor of qualitatively different and more efficient approaches.
 
