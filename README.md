@@ -1,7 +1,7 @@
 # OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization
 
 [![arXiv](https://img.shields.io/badge/arXiv-preprint-b31b1b.svg)](https://arxiv.org/abs/2506.18880)
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-explorative)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-explorative)
 
 **Authors:** Yiyou Sun¹, Shawn Hu⁴, Georgia Zhou¹, Ken Zheng¹, Hannaneh Hajishirzi²'³, Nouha Dziri², Dawn Song¹
 
@@ -66,17 +66,17 @@ MathOOD covers six major mathematical domains:
 
 ### Generalization Types (Example)
 
-#### 1. Exploratory Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-explorative)
+#### 1. Exploratory Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-explorative)
 Tests scaling to more complex instances within the same domain:
 - **Training**: Simple 2x2 matrix determinants
 - **Testing**: Complex 5x5 matrix determinants
 
-#### 2. Compositional Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-compositional) 
+#### 2. Compositional Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-compositional) 
 Tests combining multiple mathematical skills:
 - **Training**: Geometry (circle properties) + Algebra (function intersection)
 - **Testing**: Problems requiring both skills simultaneously
 
-#### 3. Transformative Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-transformative)
+#### 3. Transformative Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-transformative)
 Tests adoption of novel solution strategies:
 - **Training**: Standard polynomial root-finding methods
 - **Testing**: Complex analysis techniques (De Moivre's theorem)

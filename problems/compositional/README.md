@@ -1,5 +1,5 @@
 # Compositional Math Problem Settings
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-compositional)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/omega-compositional)
 
 This directory contains compositional mathematical problem settings that combine different mathematical domains to evaluate model performance on complex, multi-domain reasoning tasks.
 
