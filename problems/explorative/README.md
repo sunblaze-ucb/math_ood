@@ -1,4 +1,5 @@
 # Explorative Math Problem Settings
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-explorative)
 
 This directory contains explorative mathematical problem settings that assess whether a model can **faithfully extend** a single reasoning strategy beyond the range of complexities seen during training.
 

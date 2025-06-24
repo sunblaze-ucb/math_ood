@@ -1,7 +1,7 @@
-# MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning
+# OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization
 
-[![arXiv](https://img.shields.io/badge/arXiv-preprint-b31b1b.svg)](https://arxiv.org/abs/your-paper-link)
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou)
+[![arXiv](https://img.shields.io/badge/arXiv-preprint-b31b1b.svg)](https://arxiv.org/abs/2506.18880)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-explorative)
 
 **Authors:** Yiyou Sun¹, Shawn Hu⁴, Georgia Zhou¹, Ken Zheng¹, Hannaneh Hajishirzi²'³, Nouha Dziri², Dawn Song¹
 
@@ -9,11 +9,11 @@
 
 ## Abstract
 
-Recent large-scale language models (LLMs) with long Chain-of-Thought reasoning—such as DeepSeek-R1—have achieved impressive results on Olympiad-level mathematics benchmarks. However, they often rely on a narrow set of strategies and struggle with problems that require a novel way of thinking. To systematically probe these limitations, we introduce **MathOOD**, a controlled yet diverse benchmark designed to evaluate three axes of out-of-distribution generalization inspired by Boden's typology of creativity:
+Recent large-scale language models (LLMs) with long Chain-of-Thought reasoning—such as DeepSeek-R1—have achieved impressive results on Olympiad-level mathematics benchmarks. However, they often rely on a narrow set of strategies and struggle with problems that require a novel way of thinking. To systematically probe these limitations, we introduce **OMEGA**, a controlled yet diverse benchmark designed to evaluate three axes of out-of-distribution generalization inspired by Boden's typology of creativity:
 
 1. **Exploratory** — applying known problem-solving skills to more complex instances within the same problem domain
 2. **Compositional** — combining distinct reasoning skills, previously learned in isolation, to solve novel problems that require integrating these skills in new and coherent ways  
-3. **Transformative** — adopting novel, often unconventional strategies by moving beyond familiar approaches to solve problems more effectively
+3. **Transformative**  — adopting novel, often unconventional strategies by moving beyond familiar approaches to solve problems more effectively
 
 MathOOD consists of programmatically generated training–test pairs derived from templated problem generators across geometry, number theory, algebra, combinatorics, logic, and puzzles, with solutions verified using symbolic, numerical, or graphical methods.
 
@@ -66,17 +66,17 @@ MathOOD covers six major mathematical domains:
 
 ### Generalization Types (Example)
 
-#### 1. Exploratory Generalization
+#### 1. Exploratory Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-explorative)
 Tests scaling to more complex instances within the same domain:
 - **Training**: Simple 2x2 matrix determinants
 - **Testing**: Complex 5x5 matrix determinants
 
-#### 2. Compositional Generalization  
+#### 2. Compositional Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-compositional) 
 Tests combining multiple mathematical skills:
 - **Training**: Geometry (circle properties) + Algebra (function intersection)
 - **Testing**: Problems requiring both skills simultaneously
 
-#### 3. Transformative Generalization
+#### 3. Transformative Generalization [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Datasets-yellow)](https://huggingface.co/datasets/sunyiyou/math-transformative)
 Tests adoption of novel solution strategies:
 - **Training**: Standard polynomial root-finding methods
 - **Testing**: Complex analysis techniques (De Moivre's theorem)
@@ -109,18 +109,16 @@ Each folder contains detailed README files with dataset links and problem descri
 
 ## 📚 Citation
 
-If you use MathOOD in your research, please cite:
+If you use OMEGA in your research, please cite:
 
 ```bibtex
-@article{sun2025mathood,
-  title={MathOOD: Probing the Generalization Limits of LLMs in Math Reasoning},
-  author={Sun, Yiyou and Hu, Shawn and Zhou, Georgia and Zheng, Ken and Hajishirzi, Hannaneh and Dziri, Nouha and Song, Dawn},
-  year={2025},
-  
-}
+@article{{sun2024omega,
+  title     = {{OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization}},
+  author    = {{Yiyou Sun and Shawn Hu and Georgia Zhou and Ken Zheng and Hannaneh Hajishirzi and Nouha Dziri and Dawn Song}},
+  journal   = {{arXiv preprint arXiv:2506.18880}},
+  year      = {{2024}},
+}}
 ```
-
-[//]: # (journal={arXiv preprint arXiv:xxxx.xxxxx})
 
 ## 📄 License
 
